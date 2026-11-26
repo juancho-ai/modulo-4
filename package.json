@@ -1,0 +1,52 @@
+{
+  "name": "nativescript-nativo-testing-proyecto",
+  "main": "src/main.ts",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "android": "ns run android",
+    "ios": "ns run ios",
+    "test": "ns test android --justlaunch",
+    "test:karma": "karma start karma.conf.js --single-run"
+  },
+  "dependencies": {
+    "@angular/animations": "~17.3.0",
+    "@angular/common": "~17.3.0",
+    "@angular/compiler": "~17.3.0",
+    "@angular/core": "~17.3.0",
+    "@angular/forms": "~17.3.0",
+    "@angular/platform-browser": "~17.3.0",
+    "@angular/platform-browser-dynamic": "~17.3.0",
+    "@angular/router": "~17.3.0",
+    "@nativescript/angular": "~17.0.0",
+    "@nativescript/camera": "~5.1.0",
+    "@nativescript/core": "~8.7.0",
+    "@nativescript/firebase-core": "~3.1.0",
+    "@nativescript/firebase-messaging": "~3.1.0",
+    "@nativescript/google-maps": "~2.1.0",
+    "@nativescript/social-share": "~2.0.3",
+    "@nativescript/theme": "~3.0.2",
+    "@ngrx/store": "~17.2.0",
+    "nativescript-toast": "~3.0.1",
+    "nativescript-ui-sidedrawer": "~11.1.0",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "~17.3.0",
+    "@angular/compiler-cli": "~17.3.0",
+    "@nativescript/android": "~8.7.0",
+    "@nativescript/ios": "~8.7.0",
+    "@nativescript/types": "~8.7.0",
+    "@nativescript/webpack": "~5.0.0",
+    "@types/jasmine": "~5.1.4",
+    "jasmine-core": "~5.1.2",
+    "karma": "~6.4.3",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-junit-reporter": "~2.0.1",
+    "karma-webpack": "~5.0.1",
+    "ts-loader": "~9.5.1",
+    "typescript": "~5.4.0"
+  }
+}

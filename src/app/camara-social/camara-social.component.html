@@ -1,0 +1,54 @@
+<ActionBar class="action-bar">
+  <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+  <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left"></ActionItem>
+  <Label text="Cámara y Social Share"></Label>
+</ActionBar>
+
+<ScrollView>
+  <StackLayout class="cs-page">
+    <!-- Requisito 3: Compartir contenido tipo texto con SocialShare -->
+    <StackLayout class="feature-card">
+      <Label text="1. Compartir Texto (@nativescript/social-share)" class="card-title"></Label>
+      <TextField
+        [(ngModel)]="textoParaCompartir"
+        hint="Escribe el mensaje a compartir..."
+        class="text-input"
+      ></TextField>
+      <Button text="Compartir Texto" (tap)="compartirTexto()" class="btn-share-text"></Button>
+    </StackLayout>
+
+    <!-- Requisitos 4, 5 y 6: Tomar fotografía con @nativescript/camera y compartirla con SocialShare -->
+    <StackLayout class="feature-card">
+      <Label text="2. Cámara (@nativescript/camera) y Compartir Imagen" class="card-title"></Label>
+      <Label
+        text="Captura una fotografía con la cámara del dispositivo y compártela mediante SocialShare:"
+        textWrap="true"
+        class="card-subtitle"
+      ></Label>
+
+      <Button text="Tomar Fotografía con Cámara" (tap)="tomarFotografia()" class="btn-camera"></Button>
+
+      <Image
+        *ngIf="tieneFotoCamara && imagenCamara"
+        [src]="imagenCamara"
+        height="220"
+        stretch="aspectFit"
+        class="preview-foto"
+      ></Image>
+
+      <Image
+        *ngIf="!tieneFotoCamara"
+        src="res://ic_catalogo_custom"
+        height="110"
+        stretch="aspectFit"
+        class="preview-foto"
+      ></Image>
+
+      <Button
+        text="Compartir Imagen / Foto de Cámara"
+        (tap)="compartirImagen()"
+        class="btn-share-image"
+      ></Button>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>

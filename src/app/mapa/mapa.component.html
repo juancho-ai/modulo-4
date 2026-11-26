@@ -1,0 +1,25 @@
+<ActionBar class="action-bar">
+  <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+  <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left"></ActionItem>
+  <Label text="Google Maps y Marcador"></Label>
+</ActionBar>
+
+<GridLayout rows="auto, *">
+  <StackLayout row="0" class="map-header">
+    <Label text="Mapa de Google (@nativescript/google-maps)" class="map-title"></Label>
+    <Label
+      text="Configurado con API Key propia en AndroidManifest.xml y marcador georreferenciado."
+      textWrap="true"
+      class="map-subtitle"
+    ></Label>
+  </StackLayout>
+
+  <!-- Requisitos 7 y 8: Vista de Google Maps -->
+  <MapView
+    row="1"
+    [lat]="latitud"
+    [lng]="longitud"
+    [zoom]="zoom"
+    (ready)="onMapReady($event)"
+  ></MapView>
+</GridLayout>

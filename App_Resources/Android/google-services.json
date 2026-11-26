@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849201746310",
+    "project_id": "nativescript-juancho-app",
+    "storage_bucket": "nativescript-juancho-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849201746310:android:9f4a2c8e1b7d3056a12c",
+        "android_client_info": {
+          "package_name": "org.nativescript.nativotesting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyJuanchoProyectoFirebaseKey2026Personal"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

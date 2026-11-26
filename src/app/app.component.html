@@ -1,0 +1,30 @@
+<RadSideDrawer [drawerTransition]="sideDrawerTransition">
+  <GridLayout tkDrawerContent rows="auto, *" class="nt-drawer__content">
+    <StackLayout row="0" class="sidedrawer-header">
+      <Image src="res://ic_catalogo_custom" width="48" height="48" horizontalAlignment="left"></Image>
+      <Label class="sidedrawer-header-brand" text="Capacidades Nativas"></Label>
+      <Label class="sidedrawer-header-footnote" text="Firebase • Cámara • Maps • Jasmine"></Label>
+    </StackLayout>
+
+    <ScrollView row="1" class="nt-drawer__body">
+      <StackLayout>
+        <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.-selected]="isComponentSelected('/firebase')" (tap)="onNavItemTap('/firebase')">
+          <Label col="0" text="&#xf0f3;" class="nt-icon fas"></Label>
+          <Label col="1" text="Firebase Push & Token" class="p-r-10"></Label>
+        </GridLayout>
+
+        <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.-selected]="isComponentSelected('/camara-social')" (tap)="onNavItemTap('/camara-social')">
+          <Label col="0" text="&#xf030;" class="nt-icon fas"></Label>
+          <Label col="1" text="Cámara y Social Share" class="p-r-10"></Label>
+        </GridLayout>
+
+        <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.-selected]="isComponentSelected('/mapa')" (tap)="onNavItemTap('/mapa')">
+          <Label col="0" text="&#xf3c5;" class="nt-icon fas"></Label>
+          <Label col="1" text="Google Maps & Marker" class="p-r-10"></Label>
+        </GridLayout>
+      </StackLayout>
+    </ScrollView>
+  </GridLayout>
+
+  <page-router-outlet tkMainContent></page-router-outlet>
+</RadSideDrawer>

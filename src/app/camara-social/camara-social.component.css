@@ -1,0 +1,63 @@
+.cs-page {
+  padding: 16;
+  background-color: #f8fafc;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 16;
+  border-radius: 10;
+  margin-bottom: 16;
+  border-width: 1;
+  border-color: #cbd5e1;
+}
+
+.card-title {
+  font-size: 16;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 8;
+}
+
+.card-subtitle {
+  font-size: 13;
+  color: #475569;
+  margin-bottom: 12;
+}
+
+.text-input {
+  border-width: 1;
+  border-color: #94a3b8;
+  border-radius: 8;
+  padding: 10;
+  margin-bottom: 12;
+  font-size: 14;
+}
+
+.btn-share-text {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 8;
+  font-weight: bold;
+}
+
+.btn-camera {
+  background-color: #0f766e;
+  color: #ffffff;
+  border-radius: 8;
+  font-weight: bold;
+  margin-bottom: 12;
+}
+
+.preview-foto {
+  border-radius: 8;
+  background-color: #f1f5f9;
+  margin-bottom: 12;
+}
+
+.btn-share-image {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border-radius: 8;
+  font-weight: bold;
+}

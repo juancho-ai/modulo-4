@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<testsuite name="NativeScriptReduxJasmineSuite" package="NativeScriptReduxJasmineSuite" timestamp="2026-11-25T23:55:00" id="0" hostname="workstation-ns" tests="4" errors="0" failures="0" time="0.042">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) HeadlessChrome/130.0.0.0"/>
+  </properties>
+  <testcase name="lecturaReducer debe retornar el estado inicial por defecto" time="0.012" classname="NativeScriptReduxJasmineSuite.lecturaReducer"/>
+  <testcase name="lecturaReducer debe agregar un artículo al despachar la acción leerAhora" time="0.011" classname="NativeScriptReduxJasmineSuite.lecturaReducer"/>
+  <testcase name="lecturaReducer no debe duplicar artículos ya agregados en listaLeerAhora" time="0.009" classname="NativeScriptReduxJasmineSuite.lecturaReducer"/>
+  <testcase name="lecturaReducer debe eliminar un artículo por id con quitarDeLeerAhora" time="0.010" classname="NativeScriptReduxJasmineSuite.lecturaReducer"/>
+  <system-out><![CDATA[
+]]></system-out>
+  <system-err/>
+</testsuite>

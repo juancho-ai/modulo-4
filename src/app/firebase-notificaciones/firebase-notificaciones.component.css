@@ -1,0 +1,71 @@
+.fb-page {
+  padding: 16;
+  background-color: #f8fafc;
+}
+
+.token-card, .notif-card {
+  background-color: #ffffff;
+  padding: 16;
+  border-radius: 10;
+  margin-bottom: 16;
+  border-width: 1;
+  border-color: #cbd5e1;
+}
+
+.card-title {
+  font-size: 16;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 6;
+}
+
+.card-subtitle {
+  font-size: 13;
+  color: #475569;
+  margin-bottom: 10;
+}
+
+.token-box {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  font-size: 12;
+  padding: 10;
+  border-radius: 6;
+  height: 85;
+  margin-bottom: 12;
+}
+
+.btn-token {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 8;
+  font-weight: bold;
+}
+
+.btn-toast {
+  background-color: #d97706;
+  color: #ffffff;
+  border-radius: 8;
+  font-weight: bold;
+  margin-bottom: 12;
+}
+
+.notif-item {
+  padding: 10;
+  background-color: #fffbeb;
+  border-left-width: 4;
+  border-left-color: #f59e0b;
+  border-radius: 6;
+  margin-top: 8;
+}
+
+.notif-titulo {
+  font-weight: bold;
+  font-size: 14;
+  color: #92400e;
+}
+
+.notif-cuerpo {
+  font-size: 13;
+  color: #78350f;
+}

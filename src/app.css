@@ -1,0 +1,29 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+.sidedrawer-header {
+  background-color: #1e3a8a;
+  padding: 24 16;
+}
+
+.sidedrawer-header-brand {
+  color: #ffffff;
+  font-size: 20;
+  font-weight: bold;
+}
+
+.sidedrawer-header-footnote {
+  color: #dbeafe;
+  font-size: 13;
+}
+
+.sidedrawer-list-item {
+  padding: 14 16;
+  color: #1f2937;
+}
+
+.sidedrawer-list-item.-selected {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-weight: bold;
+}

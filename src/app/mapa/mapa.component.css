@@ -1,0 +1,16 @@
+.map-header {
+  padding: 12 16;
+  background-color: #1e3a8a;
+}
+
+.map-title {
+  color: #ffffff;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.map-subtitle {
+  color: #dbeafe;
+  font-size: 12;
+  margin-top: 4;
+}
